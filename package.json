@@ -21,7 +21,8 @@
     "lint": "eslint src",
     "flow": "flow",
     "test": "jest",
-    "build": "run-p lint test"
+    "test:watch": "jest --watch --notify",
+    "build": "run-p lint flow test"
   },
   "dependencies": {
     "immutable": "^4.0.0-rc.9"
