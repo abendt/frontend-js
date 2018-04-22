@@ -24,6 +24,6 @@
     "build": "run-p lint test"
   },
   "dependencies": {
-    "immutable": "^3.8.2"
+    "immutable": "^4.0.0-rc.9"
   }
 }
