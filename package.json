@@ -1,0 +1,29 @@
+{
+  "name": "FrontendParcel",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "flow-bin": "^0.70.0",
+    "jest": "^22.4.3",
+    "jest-create-mock-instance": "^1.0.3",
+    "npm-run-all": "^4.1.2"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "flow": "flow",
+    "test": "jest",
+    "build": "run-p lint test"
+  },
+  "dependencies": {
+    "immutable": "^3.8.2"
+  }
+}
