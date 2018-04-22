@@ -23,8 +23,10 @@
     "flow": "flow src",
     "test": "jest src",
     "test:watch": "jest src --watch --notify",
-    "parcel": "parcel src/index.html",
-    "build": "run-p lint flow test"
+    "parcel:serve": "parcel src/index.html",
+    "parcel:build": "parcel build src/index.html",
+    "prebuild": "run-p lint flow test",
+    "build": "run-s parcel:build"
   },
   "dependencies": {
     "immutable": "^4.0.0-rc.9"
