@@ -21,7 +21,7 @@
   },
   "scripts": {
     "lint": "eslint src",
-    "flow": "flow src",
+    "flow": "flow",
     "test": "jest src",
     "test:watch": "jest src --watch --notify",
     "parcel:serve": "parcel src/index.html",
