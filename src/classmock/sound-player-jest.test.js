@@ -14,5 +14,8 @@ beforeEach(() => {
 
 it('We can check if the consumer called the class constructor', () => {
   const soundPlayer = new SoundPlayer();
+  soundPlayer.playSoundFile("mySong");
+
   expect(SoundPlayer).toHaveBeenCalledTimes(1);
+  expect(soundPlayer.playSoundFile).toHaveBeenCalledWith("mySong");
 });
