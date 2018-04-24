@@ -1,6 +1,7 @@
 // @flow
 
-import {function1, function2} from "./a";
+import { function1, function2 } from './a';
+
 jest.mock('./a');
 
 it('mock is used', () => {

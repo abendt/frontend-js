@@ -1,5 +1,5 @@
 // @flow
 
-import sum from "./sum";
+import sum from './sum';
 
-console.log("Hello", sum(1, 2));
+console.log('Hello', sum(1, 2));

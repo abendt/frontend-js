@@ -1,32 +1,29 @@
 // @flow
 
-import MyClass from "./myclass";
+import MyClass from './myclass';
 
-const sut = new MyClass("Hello");
+const sut = new MyClass('Hello');
 
 it('nonArrow', () => {
-
-  expect(sut.nonArrow()).toBe("Hello");
+  expect(sut.nonArrow()).toBe('Hello');
 
   const reference = sut.nonArrow;
 
-  expect(reference()).toBe("Hello");
+  expect(reference()).toBe('Hello');
 });
 
 it('arrow', () => {
-
-  expect(sut.arrow()).toBe("Hello");
+  expect(sut.arrow()).toBe('Hello');
 
   const reference = sut.arrow;
 
-  expect(reference()).toBe("Hello");
+  expect(reference()).toBe('Hello');
 });
 
 it('plainFunction', () => {
-
-  expect(sut.plainFunction()).toBe("Hello");
+  expect(sut.plainFunction()).toBe('Hello');
 
   const reference = sut.plainFunction;
 
-  expect(reference()).toBe("Hello");
+  expect(reference()).toBe('Hello');
 });

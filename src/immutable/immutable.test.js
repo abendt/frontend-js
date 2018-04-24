@@ -1,6 +1,6 @@
 // @flow
 
-import {Map} from "immutable";
+import { Map } from 'immutable';
 
 describe('Immutable Map', () => {
   test('can use immutable map', () => {

@@ -1,7 +1,6 @@
 // @flow
 
 export default class MyClass {
-
   name: string;
 
   constructor(name: string) {
@@ -9,18 +8,17 @@ export default class MyClass {
   }
 
   nonArrow() {
-    console.log("non-arrow", this);
+    console.log('non-arrow', this);
     return this.name;
   }
 
   arrow = () => {
-    console.log("arrow", this);
+    console.log('arrow', this);
     return this.name;
   }
 
-  plainFunction = function() {
-    console.log("plain", this);
+  plainFunction = function () {
+    console.log('plain', this);
     return this.name;
   }
-
 }

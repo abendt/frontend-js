@@ -1,6 +1,7 @@
 // @flow
 
 import SoundPlayer from './sound-player';
+
 jest.mock('./sound-player'); // SoundPlayer is now a mock constructor
 
 function _mock(mockFn) {
@@ -14,8 +15,8 @@ beforeEach(() => {
 
 it('We can check if the consumer called the class constructor', () => {
   const soundPlayer = new SoundPlayer();
-  soundPlayer.playSoundFile("mySong");
+  soundPlayer.playSoundFile('mySong');
 
   expect(SoundPlayer).toHaveBeenCalledTimes(1);
-  expect(soundPlayer.playSoundFile).toHaveBeenCalledWith("mySong");
+  expect(soundPlayer.playSoundFile).toHaveBeenCalledWith('mySong');
 });
