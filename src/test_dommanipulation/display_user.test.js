@@ -2,7 +2,6 @@
 
 import fetchCurrentUser from './fetchCurrentUser';
 import $ from "jquery";
-import {JestMockFn} from "jest";
 
 jest.mock('./fetchCurrentUser');
 
