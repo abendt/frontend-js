@@ -9,7 +9,7 @@ it('nonArrow', () => {
 
   const reference = sut.nonArrow;
 
-  expect(reference()).toBe('Hello');
+  expect(() => reference()).toThrow();
 });
 
 it('arrow', () => {
@@ -25,5 +25,5 @@ it('plainFunction', () => {
 
   const reference = sut.plainFunction;
 
-  expect(reference()).toBe('Hello');
+  expect(() => reference()).toThrow();
 });
