@@ -1,4 +1,4 @@
-// @flow
+// @flow 
 
 import createMockInstance from 'jest-create-mock-instance';
 import SoundPlayer from './sound-player';
