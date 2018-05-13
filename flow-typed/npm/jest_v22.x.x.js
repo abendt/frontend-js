@@ -1,5 +1,5 @@
-// flow-typed signature: 17c6ca97e1e560b9bc0d3400f8b2882f
-// flow-typed version: a5bbe16c29/jest_v22.x.x/flow_>=v0.39.x
+// flow-typed signature: bf2c0368ec38df69186110834f75d0a8
+// flow-typed version: 5830f27700/jest_v22.x.x/flow_>=v0.39.x
 
 type JestMockFn<TArguments: $ReadOnlyArray<*>, TReturn> = {
   (...args: TArguments): TReturn,
@@ -156,7 +156,7 @@ type DomTestingLibraryType = {
   toHaveAttribute(name: string, expectedValue?: string): void
 };
 
-// https://github.com/unindented/custom-jquery-matchers
+// Jest JQuery Matchers: https://github.com/unindented/custom-jquery-matchers
 type JestJQueryMatchersType = {
   toExist(): void,
   toHaveLength(len: number): void,
@@ -181,7 +181,6 @@ type JestJQueryMatchersType = {
   toHaveDescendant(sel: string): void,
   toHaveDescendantWithText(sel: string, text: string | RegExp): void
 };
-
 
 type JestExpectType = {
   not: JestExpectType & EnzymeMatchersType & DomTestingLibraryType & JestJQueryMatchersType,
@@ -478,7 +477,7 @@ type JestObjectType = {
    * Creates a mock function similar to jest.fn but also tracks calls to
    * object[methodName].
    */
-  spyOn(object: Object, methodName: string): JestMockFn<any, any>,
+  spyOn(object: Object, methodName: string, accessType?: "get" | "set"): JestMockFn<any, any>,
   /**
    * Set the default timeout interval for tests and before/after hooks in milliseconds.
    * Note: The default timeout interval is 5 seconds if this method is not called.
