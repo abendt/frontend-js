@@ -1,5 +1,5 @@
-// flow-typed signature: bf2c0368ec38df69186110834f75d0a8
-// flow-typed version: 5830f27700/jest_v22.x.x/flow_>=v0.39.x
+// flow-typed signature: 5f6b80ba0fa4571aac1e7ea6e5fea425
+// flow-typed version: f4a7859cd3/jest_v22.x.x/flow_>=v0.39.x
 
 type JestMockFn<TArguments: $ReadOnlyArray<*>, TReturn> = {
   (...args: TArguments): TReturn,
@@ -182,6 +182,7 @@ type JestJQueryMatchersType = {
   toHaveDescendantWithText(sel: string, text: string | RegExp): void
 };
 
+
 // Jest Extended Matchers: https://github.com/jest-community/jest-extended
 type JestExtendedMatchersType = {
   /**
@@ -220,7 +221,7 @@ type JestExtendedMatchersType = {
      * Use `.toSatisfy` when you want to use a custom matcher by supplying a predicate function that returns a `Boolean`.
      * @param {Function} predicate
      */
-    toSatisfy(predicate: (el: any) => boolean): void;
+    toSatisfy(predicate: (n: any) => boolean): void;
 
     /**
      * Use `.toBeArray` when checking if a value is an `Array`.
@@ -249,7 +250,7 @@ type JestExtendedMatchersType = {
      * Use `.toSatisfyAll` when you want to use a custom matcher by supplying a predicate function that returns a `Boolean` for all values in an array.
      * @param {Function} predicate
      */
-    toSatisfyAll(predicate: (el: any) => boolean): void;
+    toSatisfyAll(predicate: (n: any) => boolean): void;
 
     /**
      * Use `.toBeBoolean` when checking if a value is a `Boolean`.
