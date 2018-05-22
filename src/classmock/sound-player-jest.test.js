@@ -1,11 +1,13 @@
 // @flow 
 
+import type {JestMockFn} from "jest";
+
 import SoundPlayer from './sound-player';
 
 jest.mock('./sound-player'); // SoundPlayer is now a mock constructor
 
-function _mock(mockFn) {
-  return (mockFn: any);
+function _mock<T>(mockFn: T): JestMockFn {
+    return ((mockFn: any): JestMockFn);
 }
 
 beforeEach(() => {
