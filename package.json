@@ -19,7 +19,7 @@
     "jest": "^22.4.3",
     "jest-create-mock-instance": "^1.0.3",
     "jest-extended": "^0.7.1",
-    "jest-jquery-matchers": "^2.0.2",
+    "jest-jquery-matchers": "^2.1.0",
     "jest-junit": "^4.0.0",
     "npm-run-all": "^4.1.2",
     "parcel-bundler": "^1.8.1"

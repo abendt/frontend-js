@@ -3229,9 +3229,9 @@ jest-jasmine2@^22.4.3:
     jest-util "^22.4.3"
     source-map-support "^0.5.0"
 
-jest-jquery-matchers@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/jest-jquery-matchers/-/jest-jquery-matchers-2.0.2.tgz#bf9051c77abf0338e316a032d839b9f7ffe82f75"
+jest-jquery-matchers@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/jest-jquery-matchers/-/jest-jquery-matchers-2.1.0.tgz#b56d19c460f6e57b17e6ddcce6f905d28b0ec532"
 
 jest-junit@^4.0.0:
   version "4.0.0"
