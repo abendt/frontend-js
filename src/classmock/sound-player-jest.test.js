@@ -1,6 +1,6 @@
 // @flow 
 
-import type {JestMockFn} from "jest";
+import type {JestMockFn} from "jest"; // eslint-disable-line
 
 import SoundPlayer from './sound-player';
 
