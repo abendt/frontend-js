@@ -29,7 +29,7 @@ test('passes when value is an array', () => {
   expect(true).not.toBeArray();
 });
 
-test('passes when value is an array', () => {
+test('passes when value is an array of size', () => {
   expect([]).toBeArrayOfSize(0);
   expect([1]).toBeArrayOfSize(1);
   expect(true).not.toBeArrayOfSize(1);
@@ -103,8 +103,8 @@ it('calls mock1 before mock2', async () => {
 
 test('passes when value is a number', () => {
   expect(1).toBeNumber();
-  expect(NaN).not.toBeNumber();
-  expect(Infinity).not.toBeNumber();
+  expect(NaN).toBeNumber();
+  expect(Infinity).toBeNumber();
   expect(true).not.toBeNumber();
 });
 

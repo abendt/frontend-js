@@ -3189,9 +3189,9 @@ jest-environment-node@^22.4.3:
     jest-mock "^22.4.3"
     jest-util "^22.4.3"
 
-jest-extended@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/jest-extended/-/jest-extended-0.7.1.tgz#f555fc22f4e65d9970a6164703f347f6c6abbe08"
+jest-extended@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/jest-extended/-/jest-extended-0.7.2.tgz#98fdb5349f1cf950ff7cd403a908ba525a77bba0"
   dependencies:
     chalk "^2.3.0"
     expect "^22.1.0"
